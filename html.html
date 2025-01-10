@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>SprayFly</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        background-color: #f7f7f7;
+        color: #333;
+    }
+
+    nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #188f18;
+    }
+
+    section {
+        background-color: white;
+        padding: 40px 20px;
+        margin: 30px auto;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 1200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 36px;
+        color: #0dad2f;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    section p {
+        font-size: 20px;
+        color: #555;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background-color: #51ff00;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+        background-color: #39c300;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    footer img {
+        margin-bottom: 15px;
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Mobile first */
+    @media (min-width: 600px) {
+        .container {
+            max-width: 90%;
+        }
+
+        section p {
+            font-size: 22px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 80%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor"></div>
+        <!-- Título y texto pequeño en la esquina superior izquierda -->
+        <div style="position: absolute; top: 0; left: 0; z-index: 1; padding: 10px;">
+            <h1 class="icon-bug" style="font-size: 28px; color: #0dad2f; display: inline-block; margin: 0;">
+                SprayFly
+            </h1>
+            <p style="display: inline-block; font-size: 14px; color: white; margin-left: 10px; vertical-align: middle;">
+                Eliminamos plagas de manera ecológica y segura para tu hogar
+            </p>
+        </div>
+        
+        <!-- Menú desplegable -->
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+            <a href="html.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>¿Quiénes somos?</h2>
+            <p>SprayFly se dedica a ofrecer soluciones naturales y efectivas para mantener tu hogar libre de moscas. Creemos en la importancia de productos ecológicos que no solo protejan a tu familia sino que también respeten el medio ambiente. Fomentamos la innovación, siempre buscando nuevas formas de mejorar y ofrecer lo mejor a nuestros clientes.</p>
+        </section>
+
+        <section>
+            <h2>Nuestra misión</h2>
+            <p>Somos una empresa que prioriza el equilibrio ambiental, buscando soluciones efectivas y accesibles, fomentando un entorno saludable que valore la salud y bienestar para las personas, reduciendo la presencia de moscas y previniendo enfermedades e infecciones en animales.</p>
+        </section>
+
+        <section>
+            <h2>Nuestro objetivo</h2>
+            <p>Buscamos ser la solución preferida en repelentes de moscas en México, ofreciendo productos efectivos y ecológicos que protegen la salud de las personas, mientras se preserva el bienestar de los animales y fomentan un entorno limpio y seguro, mejorando así la calidad de vida de todos.</p>
+        </section>
+
+        <section>
+            <h2>¿A qué nos dedicamos?</h2>
+            <p>Nuestra empresa se dedica a ofrecer productos efectivos que realmente funcionan, fundamentando nuestra política y la confianza. Creemos que los productos deben cumplir lo que prometen, y eso es lo que garantizamos. La sostenibilidad es uno de nuestros valores fundamentales. Utilizamos ingredientes seguros y evitamos químicos dañinos, priorizando tanto la salud de nuestros clientes como el cuidado del medio ambiente. Fomentamos la innovación, siempre buscando nuevas formas de mejorar y ofrecer lo mejor a nuestros clientes.</p>
+        </section>
+    </div>
+
+    <footer>
+        <img src="sprayfly.png" alt="Logo SprayFly">
+        <p>&copy; 2025 SprayFly. Disfruta de un espacio fresco y libre de moscas, con un repelente 100% natural que protege a tu familia y cuida el medio ambiente.</p>
+    </footer>
+</body>
+</html>
